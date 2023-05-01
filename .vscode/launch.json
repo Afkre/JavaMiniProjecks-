@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Primzahlenbis1000",
+            "request": "launch",
+            "mainClass": "Primzahlen.Primzahlenbis1000",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
+            "name": "VersandKostenPrint",
+            "request": "launch",
+            "mainClass": "VersandKosten.VersandKostenPrint",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        }
+    ]
+}

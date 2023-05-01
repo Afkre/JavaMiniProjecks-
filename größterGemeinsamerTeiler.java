@@ -11,15 +11,15 @@ public class größterGemeinsamerTeiler {
         return ggT;
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Geben Sie Zahl1 aus= ");
+            int zahl1 = scanner.nextInt();
 
-        System.out.print("Geben Sie Zahl1 aus= ");
-        int zahl1 = scanner.nextInt();
+            System.out.print("Geben Sie Zahl2 aus= ");
+            int zahl2 = scanner.nextInt();
 
-        System.out.print("Geben Sie Zahl2 aus= ");
-        int zahl2 = scanner.nextInt();
-
-        System.out.println("ggT : " + ggT(zahl1, zahl2));
+            System.out.println("ggT : " + ggT(zahl1, zahl2));
+        }
 
     }
 }

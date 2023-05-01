@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "taschenRechnerOverloading",
+            "request": "launch",
+            "mainClass": "taschenRechnerOverloading",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
             "name": "größterGemeinsamerTeiler",
             "request": "launch",
             "mainClass": "größterGemeinsamerTeiler",

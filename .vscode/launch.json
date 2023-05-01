@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "größterGemeinsamerTeiler",
+            "request": "launch",
+            "mainClass": "größterGemeinsamerTeiler",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
+            "name": "Primzahlenbis1000",
+            "request": "launch",
+            "mainClass": "Primzahlenbis1000",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

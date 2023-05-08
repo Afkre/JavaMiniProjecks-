@@ -36,6 +36,20 @@ public class Konto {
             this.passwort= passwort;
             this.bilanz = bilanz;
         }
+        public void geldeinzahlen(int betrag){
+            bilanz +=betrag;
+            System.out.println("Ihr neu Bilanz " + bilanz);
+
+        }
+        public void geldabheben(int betrag){
+            if ((bilanz - betrag)<0){
+                System.out.println("Sie haben nicht genug Bilanz/Geld auf Ihrem Konto");
+            }
+        }else {
+            bilanz -= betrag;
+            System.out.println("Ihr neu Bilanz " + bilanz);
+
+        }
 
 
     

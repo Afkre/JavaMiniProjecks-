@@ -33,7 +33,7 @@ public class Konto {
 
         public Konto(String benutzerName, String pass, int bilanz){
             this.benutzerName= benutzerName;
-            this.passwort= passwort;
+            this.passwort = passwort;
             this.bilanz = bilanz;
         }
         public void geldeinzahlen(int betrag){

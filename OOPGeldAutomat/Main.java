@@ -6,9 +6,14 @@ public class Main{
 
         // Konto Class-> erledigt die Kontotransactionen
 
-        // ATM Class -> wird den Bankautomaten bedienen.
+        // Geldautomat Class -> wird den Bankautomaten bedienen.
 
 
+        GeldAutomat geldAutomat = new GeldAutomat();
+
+        geldAutomat.arbeit();
+
+        System.out.println("Ausstieg aus dem Programm!..");
 
     }
     

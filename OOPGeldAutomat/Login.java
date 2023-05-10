@@ -9,22 +9,21 @@ public class Login {
 
     System.out.println("Benutzer Name: ");
     benutzerName = scanner.nextLine();
+    
     System.out.println("Passwort : ");
     pass = scanner.nextLine();
     
     scanner.close();
 
-    if (konto.getBenutzerName().equals(benutzerName) && konto.getPass().equals(pass)){
+        if (konto.getBenutzerName().equals(benutzerName) && konto.getPass().equals(pass)){
 
-        return true;,
+            return true;
 
-    } else{
+        } else{
 
-        return false;
-        
-    }
-    
+            return false;
 
+        }
     
     }
     

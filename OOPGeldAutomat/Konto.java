@@ -1,67 +1,67 @@
 
 public class Konto {
-        private String benutzerName;
-        private String pass;
-        private int bilanz;
+    private String benutzerName;
+    private String pass;
+    private int bilanz;
 
-        public String getPass() {
+    public String getPass() {
 
-            return pass;
-        }
+        return pass;
+    }
 
-        public void setPass(String pass) {
+    public void setPass(String pass) {
 
-            this.pass = pass;
-        }
+        this.pass = pass;
+    }
 
         
 
-        public String getBenutzerName() {
+    public String getBenutzerName() {
 
-            return benutzerName;
-        }
+        return benutzerName;
+    }
 
-        public void setBenutzerName(String benutzerName) {
+    public void setBenutzerName(String benutzerName) {
 
-            this.benutzerName = benutzerName;
-        }
+        this.benutzerName = benutzerName;
+    }
 
-        public int getBilanz() {
+    public int getBilanz() {
 
-            return bilanz;
-        }
+    return bilanz;
 
-        public void setBilanz(int bilanz) {
+    }
 
-            this.bilanz = bilanz;
-        }
+    public void setBilanz(int bilanz) {
 
-        public Konto(String benutzerName, String pass, int bilanz){
+        this.bilanz = bilanz;
+    }
 
-            this.benutzerName= benutzerName;
-            this.pass = pass;
-            this.bilanz = bilanz;
+    public Konto(String benutzerName, String pass, int bilanz){
 
-        }
-        public void geldeinzahlen(int betrag){
+        this.benutzerName= benutzerName;
+        this.pass = pass;
+        this.bilanz = bilanz;
+    
+    }
+    
+    public void geldeinzahlen(int betrag){
 
-            bilanz +=betrag;
-            System.out.println("Ihr neu Bilanz " + bilanz);
+        bilanz +=betrag;
+        System.out.println("Ihr neu Bilanz " + bilanz);
 
-        }
-        /**
-         * @param betrag
-         */
-        public void geldabheben(int betrag){
+    }
+        
+    public void geldabheben(int betrag){
 
-            if ((bilanz - betrag)<0){
+        if ((bilanz - betrag)<0){
 
-                System.out.println("Sie haben nicht genug Bilanz/Geld auf Ihrem Konto");
+            System.out.println("Sie haben nicht genug Bilanz/Geld auf Ihrem Konto");
 
-            } else {
+        } else {
 
-            bilanz -= betrag;
-            System.out.println("Ihr neu Bilanz " + bilanz);
+        bilanz -= betrag;
+        System.out.println("Ihr neu Bilanz " + bilanz);
 
         }    
     }

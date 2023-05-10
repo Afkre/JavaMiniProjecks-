@@ -15,9 +15,13 @@ public class Login {
     scanner.close();
 
     if (konto.getBenutzerName().equals(benutzerName) && konto.getPass().equals(pass)){
-        return true;
+
+        return true;,
+
     } else{
+
         return false;
+        
     }
     
 

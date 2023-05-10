@@ -1,16 +1,16 @@
-import java.lang.reflect.Constructor;
+import java.lang.reflect;
 
 public class Konto {
         private String benutzerName;
-        private String passwort;
+        private String pass;
         private int bilanz;
 
-        public String getPasswort() {
-            return passwort;
+        public String getPass() {
+            return pass;
         }
 
-        public void setPasswort(String passwort) {
-            this.passwort = passwort;
+        public void setPass(String pass) {
+            this.pass = pass;
         }
 
         
@@ -33,7 +33,7 @@ public class Konto {
 
         public Konto(String benutzerName, String pass, int bilanz){
             this.benutzerName= benutzerName;
-            this.passwort = passwort;
+            this.pass = pass;
             this.bilanz = bilanz;
         }
         public void geldeinzahlen(int betrag){
@@ -41,11 +41,13 @@ public class Konto {
             System.out.println("Ihr neu Bilanz " + bilanz);
 
         }
+        /**
+         * @param betrag
+         */
         public void geldabheben(int betrag){
             if ((bilanz - betrag)<0){
                 System.out.println("Sie haben nicht genug Bilanz/Geld auf Ihrem Konto");
-            }
-        }else {
+            } else {
             bilanz -= betrag;
             System.out.println("Ihr neu Bilanz " + bilanz);
 
@@ -53,4 +55,5 @@ public class Konto {
 
 
     
+}
 }

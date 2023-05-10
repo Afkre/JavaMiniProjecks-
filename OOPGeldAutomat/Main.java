@@ -7,7 +7,7 @@ public class Main{
         // Geldautomat Class -> wird den Bankautomaten bedienen.
 
         GeldAutomat geldAutomat = new GeldAutomat();
-        Konto konto = new Konto ("Ahmet Efkere", "123456", 2500)
+        Konto konto = new Konto ("Ahmet Efkere", "123456", 2500);
 
         geldAutomat.arbeit(konto);
 

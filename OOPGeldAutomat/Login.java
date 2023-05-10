@@ -5,18 +5,19 @@ public class Login {
 
     Scanner scanner = new Scanner(System.in);
     String benutzerName;
-    String passwort;
+    String pass;
 
     System.out.println("Benutzer Name: ");
     benutzerName = scanner.nextLine();
     System.out.println("Passwort : ");
-    passwort = scanner.nextLine();
+    pass = scanner.nextLine();
 
-    if (konto.getBenutzerName().equals(benutzerName) && konto.getPasswort().equals(passwort)){
+    if (konto.getBenutzerName().equals(benutzerName) && konto.getPass().equals(pass)){
         return true;
     } else{
         return false;
     }
-
+    
     }
+    
 }

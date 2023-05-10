@@ -1,4 +1,3 @@
-import java.lang.reflect;
 
 public class Konto {
         private String benutzerName;

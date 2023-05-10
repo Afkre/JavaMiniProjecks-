@@ -11,12 +11,16 @@ public class Login {
     benutzerName = scanner.nextLine();
     System.out.println("Passwort : ");
     pass = scanner.nextLine();
+    
+    scanner.close();
 
     if (konto.getBenutzerName().equals(benutzerName) && konto.getPass().equals(pass)){
         return true;
     } else{
         return false;
     }
+    
+
     
     }
     

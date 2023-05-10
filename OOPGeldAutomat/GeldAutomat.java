@@ -68,6 +68,6 @@ public class GeldAutomat {
                     System.out.println("Ungültige Opertion...");
             }
         }
-        
+        scanner.close();
     }
 }

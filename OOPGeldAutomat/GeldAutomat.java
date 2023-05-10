@@ -39,12 +39,10 @@ public class GeldAutomat {
         }    
 
         System.out.println("****************************************");
-
         String operationen = "1.Bilanz ansehen\n"
                             +"2.Geld  einzahlen\n"
                             +"3.Geld abheben\n"
-                            +"Zum Verlassen drücken Sie Q";
-                
+                            +"Zum Verlassen drücken Sie Q";                
         System.out.println(operationen);
         System.out.println("****************************************");
 

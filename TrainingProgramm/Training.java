@@ -52,7 +52,13 @@ public class Training {
         if (artTraining.equals("Burpee") ){
             burpeeMaht(zahl);
         } else if (artTraining.equals("Pushup")){
-
+            pushupMaht(zahl);
+        }else if (artTraining.equals("Situp")){
+            SitupMaht(zahl);
+        }else if (artTraining.equals("Squat")){
+            SquatMaht(zahl);
+        }else {
+            System.out.println("Ungültige Training...");
         }
     }
 

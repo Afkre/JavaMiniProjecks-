@@ -48,6 +48,10 @@ public class Training {
         this.squatzahl = squatzahl;
     }
 
+    public void sporttraining(String artBewegung, int zahl){
+        
+    }
+
     
 
 

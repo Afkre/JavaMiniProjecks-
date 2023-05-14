@@ -19,7 +19,25 @@ public class Main {
 
         System.out.println("Erstellen Sie eine Training...");
 
-        System.out.println();
+        System.out.println("Burplee Zahl: ");
+        int burpee = scanner.nextInt();
+
+        System.out.println("Pushup Zahl: ");
+        int pushup = scanner.nextInt();
+
+        System.out.println("Situp Zahl: ");
+        int situp = scanner.nextInt();
+
+        System.out.println("Squat Zahl: ");
+        int squat = scanner.nextInt();
+
+        Training training = new Training(burpee, pushup, situp, squat);
+
+        
+
+
+
+
 
 
 

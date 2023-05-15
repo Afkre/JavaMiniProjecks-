@@ -9,7 +9,7 @@ public class Girokonto extends Konto{
 		this.limit = limit;				// von diesem class
 	}	
 	
-	/*
+	
 	public boolean auszahlen(double value) {
 		if(this.kontostand - value >= limit * -1) {
 			super.auszahlen(value);
@@ -18,8 +18,8 @@ public class Girokonto extends Konto{
 		
 		return false;
 	}
-	*/
 	
+	/* 
 	public boolean auszahlen(double value) {
 		  if (this.kontostand - value >= 0 && value <= limit) {
 		   super.auszahlen(value);
@@ -27,7 +27,8 @@ public class Girokonto extends Konto{
 		  }
 		  return false;
 	}	
-	
+	*/
+    
 	public double getLimit() {
 		return this.limit;
 	}

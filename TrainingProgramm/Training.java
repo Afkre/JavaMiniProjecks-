@@ -48,7 +48,7 @@ public class Training {
         this.squatzahl = squatzahl;
     }
 
-    public void sporttraining(String artTraining, int zahl){
+    public void machttraining(String artTraining, int zahl){
         if (artTraining.equals("Burpee") ){
             burpeeMaht(zahl);
         } else if (artTraining.equals("Pushup")){

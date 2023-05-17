@@ -12,6 +12,7 @@ public class Mitarbeiter {
     }
 
     public void anzeigenInfornationen(){
+        System.out.println("Mitarbeiter Informationen....");
         System.out.println("Vorname : " + vorname);
         System.out.println("Nachname : " + nachname);
         System.out.println("ID : " + id);

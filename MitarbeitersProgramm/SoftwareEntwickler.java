@@ -1,3 +1,5 @@
+package MitarbeitersProgramm;
+
 public class SoftwareEntwickler extends Mitarbeiter {
 
     private String sprache;

@@ -41,7 +41,7 @@ public class Main {
                     System.out.println("Beenden der Softwareentwickler-Operationen.");
                     break;
                 } else if (e_operation.equals(("1"))){
-                    System.out.println("Betriebssystem :");
+                    System.out.print("Betriebssystem :");
                     String betribssystem = scanner.nextLine();
                     softwareEntwickler.formattieren(betribssystem);
                 }

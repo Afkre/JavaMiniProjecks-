@@ -12,7 +12,7 @@ public class SoftwareEntwickler extends Mitarbeiter {
     }
 
     public void formattieren(String betriebssystem){
-        System.out.println(getVorname() + " installiert" + betriebssystem);
+        System.out.println(getVorname() + " installiert " + betriebssystem);
         
     }
 

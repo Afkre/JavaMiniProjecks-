@@ -17,7 +17,9 @@ public class Mainboard {
         this.betriebsSystem = betriebsSystem;
     }
 
-    
+    public void betriebsSystemInstallieren(String betriebsSystem){
+
+    }
 
     public String getModel() {
         return model;

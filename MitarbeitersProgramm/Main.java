@@ -88,7 +88,7 @@ public class Main {
             
             
         }
-
+        scanner.close();
         System.out.println("ungültige Operation");
 
      }

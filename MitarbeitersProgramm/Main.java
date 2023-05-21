@@ -19,7 +19,7 @@ public class Main {
      System.out.println("...........................................");
      
      while (true){
-        System.out.println("Wählen Sie bitte eine Operation!...");
+        System.out.print("Wählen Sie bitte eine Operation: ");
         String operation = scanner.nextLine();
 
         if(operation.equals("q")){
@@ -34,7 +34,7 @@ public class Main {
             
             while (true){
 
-                System.out.println("Wählen Sie bitte eine Operation!...");
+                System.out.print("Wählen Sie bitte eine Operation: ");
                 String e_operation = scanner.nextLine();
 
                 if (e_operation.equals("q")){
@@ -62,7 +62,7 @@ public class Main {
 
             while (true){
 
-                System.out.println("Wählen Sie bitte eine Operation!...");
+                System.out.print("Wählen Sie bitte eine Operation: ");
                 String a_operation = scanner.nextLine();
 
                 if (a_operation.equals("q")){

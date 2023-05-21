@@ -18,6 +18,9 @@ public class Mainboard {
     }
 
     public void betriebsSystemInstallieren(String betriebsSystem){
+        this.betriebsSystem = betriebsSystem;
+
+        System.out.println("Betriebssytem ist installiert: " + betriebsSystem);
 
     }
 

@@ -14,7 +14,7 @@ public class Computer {
         this.mainboard = mainboard;
     }
 
-    public void 
+    
 
 
     public Bildschrim getBildschrim() {

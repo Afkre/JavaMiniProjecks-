@@ -12,6 +12,11 @@ public class Tower {
         this.model = model;
         this.hersteller = hersteller;
         this.material = material;
+
+    }
+
+    public void computeroffen(){
+        System.out.println("Computer ist geoffenet...");
     }
 
     public String getModel() {

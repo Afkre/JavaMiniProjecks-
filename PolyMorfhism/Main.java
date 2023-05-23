@@ -62,7 +62,7 @@ class Pferd extends Tier{
 
 public class Main {
 
-    public static void spricht(Tier tier){
+    public static void sprichtlaesst(Tier tier){
         System.out.println(tier.spricht());
     }
 
@@ -77,7 +77,13 @@ public class Main {
         System.out.println(tier2.spricht());
         System.out.println(tier3.spricht());
         */
+
+        sprichtlaesst(new Katze("Hellblau"));
+        sprichtlaesst(new Hund("Hellbraun"));
+        sprichtlaesst(new Pferd("HellPferd"));
         
+
+
 
 
 

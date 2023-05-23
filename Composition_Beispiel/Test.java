@@ -16,4 +16,5 @@ public class Test {
 
         pc.getBildschrim().bildschrimAusschalten();
         pc.getMainboard().betriebsSystemInstallieren("Ubuntu 16.04");
+    }
 }

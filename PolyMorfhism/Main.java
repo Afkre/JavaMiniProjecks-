@@ -19,6 +19,8 @@ class Tier{
         return "Tier bewegt...";
     }
 
+
+
 }
 
 class Katze extends Tier{
@@ -57,13 +59,61 @@ class Pferd extends Tier{
     }
 }
 
+class Vogel extends Tier{
+
+    public Vogel(String name){
+        
+        super(name);
+    }
+
+    @Override
+    public String spricht() {
+        
+        return this.getName() + " singt.";
+    }
+    
+     
+}
+
 
 
 
 public class Main {
 
+    /*
     public static void sprichtlaesst(Tier tier){
         System.out.println(tier.spricht());
+    }
+    */
+
+    public static void spricht (Object object){
+        //  System.out.println(object.spricht);
+        
+        if (object instanceof Hund){
+            Hund hund = (Hund) object;
+            hund.spricht();
+            System.out.println(hund.spricht());
+
+        }else if (object instanceof Katze ){
+            Katze katze = (Katze) object;
+            katze.spricht();
+            System.out.println(katze.spricht());
+
+
+        }else if (object instanceof Pferd){
+            Pferd pferd = (Pferd) object;
+            pferd.spricht();
+            System.out.println(pferd.spricht());
+
+        }else if (object instanceof Tier){
+            Tier tier = (Tier) object;
+            tier.spricht();
+            System.out.println(tier.spricht());
+        
+        }else if (object instanceof Vogel){
+            Vogel vogel = (Vogel) object;
+            vogel.spricht();
+            System.out.println(vogel.spricht());
     }
 
     public static void main(String[]args){
@@ -84,7 +134,9 @@ public class Main {
         sprichtlaesst(new Pferd("HellPferd"));
         */
 
+
         // instanceof
+        /*
         Hund hund = new Hund("Lessi");
 
         if ( hund instanceof Hund){
@@ -99,6 +151,18 @@ public class Main {
         //if (hund instance Katze){
         //
         //}
+        */
+
+        Hund hund = new Hund("Lessi");
+        Katze katze = new Katze("Hellblau");
+        Pferd pferd = new Pferd("Hellpferd");
+        Tier tier =  new Tier("Weiss");
+        Vogel vogel new Vogel("Goldenssegel");
+        spricht(hund);
+        spricht(katze);
+        spricht(pferd);
+        spricht(tier);
+        spricht(vogel);
 
 
 

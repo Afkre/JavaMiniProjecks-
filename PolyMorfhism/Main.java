@@ -78,10 +78,27 @@ public class Main {
         System.out.println(tier3.spricht());
         */
 
+        /*
         sprichtlaesst(new Katze("Hellblau"));
         sprichtlaesst(new Hund("Hellbraun"));
         sprichtlaesst(new Pferd("HellPferd"));
-        
+        */
+
+        // instanceof
+        Hund hund = new Hund("Lessi");
+
+        if ( hund instanceof Hund){
+            System.out.println("Dies Objekt ist von der Classe des Hundes");
+        }
+
+        if (hund instanceof Tier){
+            System.out.println("Dies Objekt ist von der Classe des Tieres");
+        }
+
+        // FALSCH - 
+        //if (hund instance Katze){
+        //
+        //}
 
 
 

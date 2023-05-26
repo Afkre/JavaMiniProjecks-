@@ -62,26 +62,15 @@ class Pferd extends Tier{
 class Vogel extends Tier{
     
     public Vogel(String name){
-        
         super(name);
     }
 
     @Override
     public String spricht() {
-        
         return this.getName() + " singt.";
     }
-
-    public String getVogel() {
-        return Vogel;
-    }
-
-        
-     
+         
 }
-
-
-
 
 public class Main {
 
@@ -115,10 +104,6 @@ public class Main {
             tier.spricht();
             System.out.println(tier.spricht());
         
-        }else if (object instanceof Vogel){
-            Vogel vogel = (Vogel) object;
-            vogel.spricht();
-            System.out.println(vogel.spricht());
         }
     }
 
@@ -163,7 +148,7 @@ public class Main {
         Katze katze = new Katze("Hellblau");
         Pferd pferd = new Pferd("Hellpferd");
         Tier tier =  new Tier("Weiss");
-        Vogel vogel new Vogel("Goldenssegel");
+        Vogel vogel = new Vogel("Goldenssegel");
         spricht(hund);
         spricht(katze);
         spricht(pferd);

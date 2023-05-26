@@ -60,7 +60,7 @@ class Pferd extends Tier{
 }
 
 class Vogel extends Tier{
-
+    
     public Vogel(String name){
         
         super(name);
@@ -71,7 +71,12 @@ class Vogel extends Tier{
         
         return this.getName() + " singt.";
     }
-    
+
+    public String getVogel() {
+        return Vogel;
+    }
+
+        
      
 }
 
@@ -114,6 +119,7 @@ public class Main {
             Vogel vogel = (Vogel) object;
             vogel.spricht();
             System.out.println(vogel.spricht());
+        }
     }
 
     public static void main(String[]args){

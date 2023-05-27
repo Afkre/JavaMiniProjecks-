@@ -17,7 +17,7 @@ public class Dragon extends Beyblade{
         super.anzeigtInformationen();
 
         System.out.println("Names der heiligen Bestie: "+ heiligeBestie);
-        System.out.println("Names der heiligen Bestie: "+ geheimesTalent);
+        System.out.println("GeheimesTalent: "+ geheimesTalent);
         
     }
 

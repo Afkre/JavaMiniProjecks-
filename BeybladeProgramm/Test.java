@@ -13,10 +13,10 @@ public class Test {
 
         while (true){
 
-            System.out.println("Welches Beyblade möchtest du herstellen?");
+            System.out.print("Welches Beyblade möchtest du herstellen?");
             String transaktion = scanner.nextLine();
             if (transaktion.equals("q")){
-                System.out.println("Beenden des Programms");
+                System.out.print("Beenden des Programms");
                 break;
             }
             else{
@@ -24,7 +24,7 @@ public class Test {
                 Beyblade beyblade = beybladefabrik.beyblademacht(transaktion); 
 
                 if (beyblade == null){
-                    System.out.println("Bitte geben Sie einen gültigen Beyblade-Namen ein.");
+                    System.out.print("Bitte geben Sie einen gültigen Beyblade-Namen ein.");
                 }
                 else {
                     beyblade.anzeigtInformationen();

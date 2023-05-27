@@ -174,6 +174,7 @@ public class taschenRechnerOverloading {
             System.out.println("ungültige Operation");
         
         } 
+        scanner.close();
         
     }
 

@@ -1,12 +1,15 @@
 package BeybladeProgramm;
 
-public class Draciel extends Beyblade {
+public class Dragon extends Beyblade{
 
     private String heiligeBestie;
 
-    public Draciel(String beybladehat, int drehzahl, int angriffskraft, String heiligeBestie) {
+    private String geheimesTalent;
+
+    public Dragon(String beybladehat, int drehzahl, int angriffskraft, String heiligeBestie, String geheimesTalent) {
         super(beybladehat, drehzahl, angriffskraft);
         this.heiligeBestie = heiligeBestie;
+        this.geheimesTalent = geheimesTalent;
     }
 
     @Override
@@ -14,17 +17,22 @@ public class Draciel extends Beyblade {
         super.anzeigtInformationen();
 
         System.out.println("Names der heiligen Bestie: "+ heiligeBestie);
+        System.out.println("Names der heiligen Bestie: "+ geheimesTalent);
+        
     }
 
+  
     @Override
     public void entfessleHeiligeBestie() {
         //super.entfessleHeiligeBestie();
         System.out.println(getBeybladehat()+ " entfellelt "+ heiligeBestie);
-        System.out.println("Verteidigung der"+  getBeybladehat()+ " :  Verteidigung des Schlosses");
-
+        System.out.println("Angriff der"+  getBeybladehat()+ " : Geisterwirbelsturm");
+    
     }
 
+
     
+
     
     
 }

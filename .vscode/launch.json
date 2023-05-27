@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "BeybladeProgramm.Test",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "PolyMorfhism.Main",

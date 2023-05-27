@@ -32,7 +32,8 @@ public class Test {
                     beyblade.entfessleHeiligeBestie();
                 }
             }
-    }
+        }
+        scanner.close();
 
-    
+    }    
 }

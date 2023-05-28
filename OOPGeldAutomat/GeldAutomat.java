@@ -15,6 +15,8 @@ public class GeldAutomat {
         System.out.println("****************************************");
 
         int einloginrecht = 3;
+        
+        scanner.close();
 
         while (true){
             if (login. login(konto)){

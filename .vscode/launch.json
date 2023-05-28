@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DosyaIsimleriniDegistir",
+            "request": "launch",
+            "mainClass": "DosyaIsimleriniDegistir",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
             "name": "Test",
             "request": "launch",
             "mainClass": "BeybladeProgramm.Test",

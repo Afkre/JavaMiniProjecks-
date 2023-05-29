@@ -33,6 +33,7 @@ public class Main {
 
             vermutungMach();
         }
+        scanner.close();
         
     }
 
@@ -61,7 +62,7 @@ public class Main {
             
         }
         
-        
+        scanner.close();
         
         
     }

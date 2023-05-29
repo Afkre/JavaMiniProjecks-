@@ -1,84 +1,63 @@
+package MemoryKarteSpiel;
 
-import java.io.File;
 import java.util.Scanner;
 
-
 public class Main {
-    private static Kart[][] kartlar = new Kart[4][4];
-    /*
-    2 boyutlu arraylerle hafıza oyunu
-    
-        kartlar[0][0] = new Kart('E');
-        kartlar[0][1] = new Kart('A');
-        kartlar[0][2] = new Kart('B');
-        kartlar[0][3] = new Kart('F');
-        kartlar[1][0] = new Kart('G');
-        kartlar[1][1] = new Kart('A');
-        kartlar[1][2] = new Kart('D');
-        kartlar[1][3] = new Kart('H');
-        kartlar[2][0] = new Kart('F');
-        kartlar[2][1] = new Kart('C');
-        kartlar[2][2] = new Kart('D');
-        kartlar[2][3] = new Kart('H');
-        kartlar[3][0] = new Kart('E');
-        kartlar[3][1] = new Kart('G');
-        kartlar[3][2] = new Kart('B');
-        kartlar[3][3] = new Kart('C');
-    
-    
-    */
+
+    private static Karte[][] karten = new Karte[4][4];
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        
-        
-        kartlar[0][0] = new Kart('E');
-        kartlar[0][1] = new Kart('A');
-        kartlar[0][2] = new Kart('B');
-        kartlar[0][3] = new Kart('F');
-        kartlar[1][0] = new Kart('G');
-        kartlar[1][1] = new Kart('A');
-        kartlar[1][2] = new Kart('D');
-        kartlar[1][3] = new Kart('H');
-        kartlar[2][0] = new Kart('F');
-        kartlar[2][1] = new Kart('C');
-        kartlar[2][2] = new Kart('D');
-        kartlar[2][3] = new Kart('H');
-        kartlar[3][0] = new Kart('E');
-        kartlar[3][1] = new Kart('G');
-        kartlar[3][2] = new Kart('B');
-        kartlar[3][3] = new Kart('C');
-        
-        while (oyunBittiMi() == false) {
+
+        karten[0][0]= new Karte('E');
+        karten[0][1]= new Karte('A');
+        karten[0][2]= new Karte('B');
+        karten[0][3]= new Karte('F');
+        karten[1][0]= new Karte('G');
+        karten[1][1]= new Karte('A');
+        karten[1][2]= new Karte('D');
+        karten[1][3]= new Karte('F');
+        karten[2][0]= new Karte('C');
+        karten[2][1]= new Karte('C');
+        karten[2][2]= new Karte('D');
+        karten[2][3]= new Karte('H');
+        karten[3][0]= new Karte('E');
+        karten[3][1]= new Karte('G');
+        karten[3][2]= new Karte('B');
+        karten[3][3]= new Karte('H');
+
+        while(istSpielfertig()==false) {
             
-            oyunTahtasi();
-            
-            tahminEt();
-            
+            spielBrett();
+
+            vermutungMach();
         }
         
     }
-    public static void tahminEt() {
+
+    public static void vermutungMach() {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Birinci Tahmin (i ve j değerlerini bir boşluklu girin...): ");
+        System.out.print("Erste Vermutung (geben Sie die Werte i und j mit einem Leerzeichen ein...): ");
         int i1 = scanner.nextInt();
         int j1 = scanner.nextInt();
         
-        kartlar[i1][j1].setTahmin(true);
-        oyunTahtasi();
+        karten[i1][j1].setVermutung(true);
+        spielBrett();
         
-        System.out.print("İkinci Tahmin (i ve j değerlerini bir boşluklu girin...): ");
+        System.out.print("Zweite Vermutung (geben Sie die Werte i und j mit einem Leerzeichen ein...): ");
         int i2 = scanner.nextInt();
         int j2 = scanner.nextInt();
         
-        if (kartlar[i1][j1].getDeger() == kartlar[i2][j2].getDeger()) {
-            System.out.println("Doğru Tahmin. Tebrikler!");
-            kartlar[i2][j2].setTahmin(true);
+        if (karten[i1][j1].getWert() == karten[i2][j2].getWert()) {
+            System.out.println("Rechte Vermutung.  Glückwunsch!");
+            karten[i2][j2].setVermutung(true);
             
         }
         else {
-            System.out.println("Yanlış Tahmin...");
-            kartlar[i1][j1].setTahmin(false);
+            System.out.println("Falsche Vermutung...");
+            karten[i1][j1].setVermutung(false);
             
         }
         
@@ -86,11 +65,11 @@ public class Main {
         
         
     }
-    public static boolean oyunBittiMi() {
+    public static boolean istSpielfertig() {
         
         for (int i =  0 ; i < 4; i++){
             for (int j = 0 ; j < 4 ; j++) {
-                if (kartlar[i][j].isTahmin() == false) {
+                if (karten[i][j].isVermutung() == false) {
                     return false;
                     
                 }
@@ -100,14 +79,14 @@ public class Main {
         return true;
         
     }
-    public static void oyunTahtasi(){
+    public static void spielBrett(){
         
         for (int i = 0 ;  i < 4 ; i++) {
             System.out.println("____________________");
             for (int j = 0 ; j < 4 ; j++) {
                 
-                if (kartlar[i][j].isTahmin()) {
-                    System.out.print(" |" + kartlar[i][j].getDeger() + "| ");
+                if (karten[i][j].isVermutung()) {
+                    System.out.print(" |" + karten[i][j].getWert() + "| ");
                     
                 }
                 else {

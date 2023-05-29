@@ -83,7 +83,8 @@ public class Main {
     public static void spielBrett(){
         
         for (int i = 0 ;  i < 4 ; i++) {
-            System.out.println("____________________");
+            //System.out.println();
+            System.out.println("-------------------");
             for (int j = 0 ; j < 4 ; j++) {
                 
                 if (karten[i][j].isVermutung()) {
@@ -97,7 +98,7 @@ public class Main {
             }
             System.out.println("");
         }
-        System.out.println("____________________");
+        System.out.println("-------------------");
 
         
         

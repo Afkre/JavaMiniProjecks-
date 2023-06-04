@@ -93,7 +93,7 @@ public class Test {
                     break;
                 case 4:
                     delete();
-                    break;6
+                    break;
                 case 5:
                     search();
                     break;

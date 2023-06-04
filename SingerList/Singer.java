@@ -4,7 +4,7 @@ public class Singer{
     
     public void singerListDruck() {
         
-        System.out.println("Auf cer Liste der Sängerinnen und Sänger stehen " + singerList.size() + " Personen");
+        System.out.println("Auf der Liste der Sängerinnen und Sänger stehen " + singerList.size() + " Personen");
         
         for (int i = 0; i < singerList.size();i++) {
             

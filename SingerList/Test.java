@@ -101,16 +101,12 @@ public class Test {
                     ausgang = true;
                     System.out.println("Beenden der Anwendung...");
                     break;
-           
+                  
                 
-                
-            }
+            }            
             
-            
-        }
+        }      
         
-        
-    }
-    
+    }    
 }
 

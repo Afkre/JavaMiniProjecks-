@@ -48,6 +48,8 @@ public class Main {
         }
         System.out.println("Ihre Training ist schon fertig...");
 
+        scanner.close();
+
 
 
 

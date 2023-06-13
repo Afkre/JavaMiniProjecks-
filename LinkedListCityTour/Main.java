@@ -57,8 +57,7 @@ public class Main {
                     }
                     else {
                         System.out.println("Gidilecek Şehir Kalmadı...");
-                        next = true;
-                        
+                        next = true;                        
                         
                     }
                     break;
@@ -84,26 +83,18 @@ public class Main {
                 case 3:
                     ausgang = true;
                     System.out.println("Die Anwendung wird aufgegeben....");
-                    break;
+                    break;                
                 
-                
-                
-                
-            }
-            
-            
-            
+            }           
             
         }
-        
-        
+
+        scanner.close();
         
     }
 
 
 
-
-    }
     public static void main(String[] args) {
 
         LinkedList<String> cities = new LinkedList<String>(null);
@@ -111,8 +102,6 @@ public class Main {
         cities.add("Köln");
         cities.add("Düsseldorf");
         cities.add("Bonn");
-
-
         
     }
     

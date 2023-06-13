@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "LinkedListCityTour.Main",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "MemoryKarteSpiel.Main",
             "projectName": "JavaMiniProjects_9c1ba786"
         },

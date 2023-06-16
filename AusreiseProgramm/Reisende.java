@@ -36,4 +36,5 @@ public class Reisende implements RegelnAusland{
         
     }
     
+    
 }

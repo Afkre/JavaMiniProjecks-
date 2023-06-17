@@ -1,6 +1,6 @@
 package AusreiseProgramm;
 
-public class RegelnAusland {
+public interface RegelnAusland {
 
     boolean abroadFeeControl();
     boolean politicalBanControl();

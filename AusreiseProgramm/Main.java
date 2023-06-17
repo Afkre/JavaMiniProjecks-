@@ -13,7 +13,7 @@ public class Main {
 
         while(true) {
             System.out.println("*******************************************");
-            System.out.println(Bedingungen);
+            System.out.println(bedingungen);
             System.out.println("*******************************************");
             
             
@@ -22,25 +22,25 @@ public class Main {
             System.out.println("Prüfen der Gebühr...");
             
             Thread.sleep(3000);
-            if (passenger.abroadFeeControl() == false) {
+            if (reisende.abroadFeeControl() == false) {
                 
-                System.out.println(Meldung);
-                weiter;
+                System.out.println(message);
+                continue;
             }
             
             System.out.println("Prüfe politisches Verbot...");
             Thread.sleep(3000);
             
-            if (traveller.politischesVerbotKontrol() == false) {
-                System.out.println(Meldung);
-                weiter;
+            if (reisende.politicalBanControl() == false) {
+                System.out.println(message);
+                continue;
             }
             System.out.println("Checking Visa Status...");
             Thread.sleep(3000);
             
-            if (passenger.visaStatusCheck() == false){
-                System.out.println(Meldung);
-                weiter;
+            if (reisende.visaStatusControl() == false){
+                System.out.println(message);
+                continue;
             }
             System.out.println("Ihre Transaktionen sind OK! Sie können ins Ausland gehen...");
             break;

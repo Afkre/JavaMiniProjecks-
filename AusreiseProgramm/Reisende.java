@@ -25,16 +25,59 @@ public class Reisende implements RegelnAusland{
         }
         System.out.print("Haben Sie ein Visum (ja oder nein)?");
         
-        String cevap2 = scanner.nextLine();
+        String antwort2 = scanner.nextLine();
         
-        if (cevap2.equals("ja") ){
+        if (antwort2.equals("ja") ){
             this.visumstatus = true;            
         }
         else {
             this.visumstatus = false;
         }
+        scanner.close();
         
     }
     
     
+@Override
+    public boolean abroadFeeControl() {
+        if (this.offizielleGebühr < 15) {
+            
+            System.out.println("Bitte zahlen Sie die Ausreisegebühr in voller Höhe...");
+            return false;
+        }
+        else {
+            System.out.println("Transaktion der Ausreisegebühr abgeschlossen!");
+            return true;
+        }
+    }
+
+    @Override
+    public boolean politicalBanControl() {
+        
+        if (this.politischesVerbot == true) {
+            System.out.println("Sie haben ein politisches Verbot. Sie können nicht ins Ausland gehen...");
+            return false;
+        }
+        else {
+            System.out.println("Sie haben kein politisches Verbot...");
+            return true;
+        }
+    }
+
+    @Override
+    public boolean visaStatusControl() {
+        if (this.visumstatus == true) {
+            
+            System.out.println("Visum ist erledigt!");
+            return true;
+        }
+        else {
+            System.out.println("Ihr Visum ist für Ihr Zielland nicht verfügbar...");
+            return false;
+        }
+
+    }
+
+
 }
+

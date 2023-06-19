@@ -45,9 +45,6 @@ public class Main {
             System.out.println("Ihre Transaktionen sind OK! Sie können ins Ausland gehen...");
             break;
             
-            
-        }
-        
-        
+        }       
     }
 }

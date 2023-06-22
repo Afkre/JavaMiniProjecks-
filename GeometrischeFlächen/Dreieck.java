@@ -7,9 +7,9 @@ public class Dreieck extends Form{
 
     public Dreieck(String name, int a, int b, int c){
         super(name);
-        this.a=a;
-        this.b=b;
-        this.c=c;
+        this.a = a;
+        this.b = b;
+        this.c = c;
 
     }
 
@@ -17,10 +17,10 @@ public class Dreieck extends Form{
     @Override
     void flaechenRechner() {
     
-        double u = (a+b+c)/2.0;
+        double u = (a + b + c) / 2.0;
 
-        double flaeche= Math.sqrt(u*(u-a)*(u-b)*(u-c));
-        System.out.println();
+        double flaeche= Math.sqrt(u * (u - a) * (u - b) * (u - c));
+        System.out.println(getName() +"flache : " + flaeche);
         
     }
 

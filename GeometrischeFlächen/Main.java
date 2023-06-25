@@ -28,10 +28,10 @@ public class Main {
             }
             else if(formArt.equals("1")){
                 System.out.print("Seitenlänge des Quadrats:  ");
-                int seitenlaenge= scanner.nextInt();
+                int seite= scanner.nextInt();
                 scanner.nextLine();
 
-                form = new Quadrat("Quadrat1", seitenlaenge);
+                form = new Quadrat("Quadrat1", seite);
 
                 form.flaechenRechner();
             }
@@ -45,6 +45,7 @@ public class Main {
 
 
                 scanner.nextLine();
+                
 
                 form = new Dreieck("Dreieck1", seitenlaenge1, seitenlaenge2, seitenlaenge3);
 
@@ -52,16 +53,19 @@ public class Main {
             }
             else if(formArt.equals("3")){
                 System.out.print("Radius des Kreises:  ");
-                
-
-
+                int kreisradius = scanner.nextInt();
                 scanner.nextLine();
 
+                form = new Kreis("Kreis1", kreisradius);
+                       
                 
                 form.flaechenRechner();
             }
+            else{
+                System.out.println("ungültige Transaction...");
+            }
 
-            
+            scanner.close();
 
         }
 

@@ -1,5 +1,7 @@
 package ProblemLoesungen;
 
+import java.util.Scanner;
+
 public class Vek {
     private String name;
     private int m;
@@ -8,6 +10,10 @@ public class Vek {
 
     public Vek(String name ){
         this.name = name;
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Geben Sie die Werte m, n und o des Vektors ein.");
     
     }
 }

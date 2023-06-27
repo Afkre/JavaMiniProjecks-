@@ -13,13 +13,13 @@ public class Vek {
 
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Geben Sie die Werte m, n und o des Vektors ein.");
+        System.out.println(" Geben Sie die Werte m, n und o des " + name +" ein.");
         System.out.print("m : ");
         this.m =  scanner.nextInt();
         System.out.print("n : ");
         this.n =  scanner.nextInt();
-        System.out.print("m : ");
-        this.m =  scanner.nextInt();
+        System.out.print("o : ");
+        this.o =  scanner.nextInt();
     
     }
 }

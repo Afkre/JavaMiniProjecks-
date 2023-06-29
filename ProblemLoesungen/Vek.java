@@ -20,8 +20,45 @@ public class Vek {
         this.n =  scanner.nextInt();
         System.out.print("o : ");
         this.o =  scanner.nextInt();
+
+        scanner.close();
     
     }
+
+   
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getM() {
+        return m;
+    }
+
+    public void setM(int m) {
+        this.m = m;
+    }
+
+    public int getN() {
+        return n;
+    }
+
+    public void setN(int n) {
+        this.n = n;
+    }
+
+    public int getO() {
+        return o;
+    }
+
+    public void setO(int o) {
+        this.o = o;
+    }
+
+    
 }
 
 

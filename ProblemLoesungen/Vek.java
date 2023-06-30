@@ -25,6 +25,7 @@ public class Vek {
     
     }
 
+    
    
     public String getName() {
         return name;

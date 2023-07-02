@@ -16,6 +16,7 @@ public class Problem {
         public static void inneresMultiplikation(Vec vec1, Vec vec2){
 
             int inneresMultpilikation = vec1.getM() * vec2.getM() + vec1.getN()*vec2.getN() + vec1.getO() * vec2.getO();
+            int inneresMultiplikation;
             System.out.println(vec1.getName() + " und " + vec2.getName() + " inneres Multiplikation = " + inneresMultiplikation);
         }
 

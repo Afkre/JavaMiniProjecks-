@@ -2,13 +2,14 @@ package ProblemLoesungen;
 
 import java.util.Scanner;
 
-public class Vek {
+public class Vec {
     private String name;
     private int m;
     private int n;
     private int o;
 
-    public Vek(String name ){
+   
+    public Vec(String name ){
         this.name = name;
 
         Scanner scanner = new Scanner(System.in);

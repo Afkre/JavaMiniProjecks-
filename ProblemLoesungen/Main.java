@@ -12,5 +12,17 @@ public class Main {
                             + "2. Berechnung des Dreiecksumfangs\n" 
                             + "3. Berechne das inverse Produkt zweier Vektoren"
                             + "Beenden: q ";
+
+        while(true){
+
+            System.out.println(transactions);
+            System.out.print("Wählen Sie eine Transaction: ");
+            String transaction = scanner.nextLine();
+
+            if (transaction.equals("q")){
+                System.out.println("");
+            }
+        }
+
     }
 }

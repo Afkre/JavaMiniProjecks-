@@ -54,7 +54,7 @@ public class Fluggast implements Regeln {
             this.gepaeck = false;
         }
         
-        System.out.println("Ist Ihr Handgepäck schwerer als 8 Kilogramm? (Ja oder Nein)?");
+        System.out.print("Ist Ihr Handgepäck schwerer als 8 Kilogramm? (Ja oder Nein)?");
         String antwort5 = scanner.nextLine();
         
         if (antwort5.equals("Nein")) {            

@@ -3,7 +3,7 @@ package KioskFlughafen;
 
 
 public class Main {
-    public static void main(String []args){
+    public static void main(String []args) throws InterruptedException{
 
         System.out.println("Willkommen am Flughafen Memmingen");
         
@@ -28,7 +28,39 @@ public class Main {
             Fluggast fluggast = new Fluggast();
             Thread.sleep(3000);
             
-            fluggast.v
+            if (fluggast.visumStatusKontroll()==false){
+
+                System.out.println(message);
+                continue;
+            }
+
+            
+
+
+            if (fluggast.gültigkeitRPassesKontroll()==false){
+
+                System.out.println(message);
+                continue;
+            }
+
+            if (fluggast.ausReiseVerbotKontroll()==false){
+
+                System.out.println(message);
+                continue;
+            }
+
+            if (fluggast.gepaeckKontroll()==false){
+
+                System.out.println(message);
+                continue;
+            }
+
+            if (fluggast.kabinGepaeckKontroll()==false){
+
+                System.out.println(message);
+                continue;
+            }
+
 
 
 

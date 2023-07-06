@@ -1,4 +1,4 @@
-package com.mycompany.kioskflughafen;
+package KioskFlughafen;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Fluggast implements Regeln {
         
         String antwort1 = scanner.nextLine();
         
-        if (antwort1.equals( "Ja") {    
+        if (antwort1.equals( "Ja")) {    
             this.visum = true;    
         }
         else{
@@ -27,7 +27,7 @@ public class Fluggast implements Regeln {
         System.out.print("Ist Ihr Reisepass für Reisen gültig (Ja oder Nein)?");
         String antwort2 = scanner.nextLine();
         
-        if (antwort2.equals("Ja") {
+        if (antwort2.equals("Ja")) {
             this.gültigkeitRPass = true;
         }
         else{
@@ -37,7 +37,7 @@ public class Fluggast implements Regeln {
         System.out.print("Ist es Ihnen gesetzlich verboten, ins Ausland zu reisen (Ja oder Nein)?");
         String antwort3 = scanner.nextLine();
         
-        if (antwort3.equals ("Nein") {            
+        if (antwort3.equals ("Nein")) {            
             this.ausReiseVerbot = true;            
         }
         else{
@@ -47,7 +47,7 @@ public class Fluggast implements Regeln {
         System.out.print("Haben Sie noch anderes Gepäck als Handgepäck? (Ja oder Nein)?");
         String antwort4 = scanner.nextLine();
         
-        if (antwort4.equals("Nein") {            
+        if (antwort4.equals("Nein")) {            
             this.gepaeck = true;            
         }
         else{
@@ -57,12 +57,14 @@ public class Fluggast implements Regeln {
         System.out.println("Ist Ihr Handgepäck schwerer als 8 Kilogramm? (Ja oder Nein)?");
         String antwort5 = scanner.nextLine();
         
-        if (antwort5.equals("Nein") {            
+        if (antwort5.equals("Nein")) {            
             this.kabinGepaeck = true;
         }
         else{
             this.kabinGepaeck = false;
-        }        
+        }
+        
+        scanner.close();
         
     }
     
@@ -112,11 +114,30 @@ public class Fluggast implements Regeln {
 
     @Override
     public boolean gepaeckKontroll() {
+        
+        if(this.gepaeck == true){
+        
+            System.out.println("Sie können weiterführen.");
+            return true;
+        }
+        else{
+            System.out.println("Da Sie Gepäck haben, müssen Sie am normalen Schalter erledigen.");
+            return false;
+        }
 
     }
 
     @Override
     public boolean kabinGepaeckKontroll() {
+        
+        if(this.kabinGepaeck == true){
+            System.out.println("Kabinengepäckverfahren sind abgeschlossen.");
+            return true;
+        }
+        else{
+            System.out.println("Da Sie Kabinengepäck mit Gewicht von mehr als 8 kg haben, müssen Sie am normalen Schalter erledigen.");
+            return false;
+        }
 
     }
     

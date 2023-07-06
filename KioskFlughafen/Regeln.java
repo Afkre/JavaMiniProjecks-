@@ -1,4 +1,4 @@
-package com.mycompany.kioskflughafen;
+package KioskFlughafen;
 
 public interface Regeln {
     boolean visumStatusKontroll();

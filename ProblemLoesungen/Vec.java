@@ -9,6 +9,9 @@ public class Vec {
     private int o;
 
    
+    /**
+     * @param name
+     */
     public Vec(String name ){
         this.name = name;
 

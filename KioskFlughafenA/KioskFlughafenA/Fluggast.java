@@ -1,4 +1,4 @@
-package KioskFlughafen;
+package KioskFlughafenA;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Fluggast implements Regeln {
     
     private boolean visum;
     private boolean gültigkeitRPass; 
+    private boolean ausReiseVerbot;
     private boolean gepaeck;
     private boolean kabinGepaeck;
     
@@ -33,7 +34,16 @@ public class Fluggast implements Regeln {
             this.gültigkeitRPass = false;
         } 
         
-          
+        System.out.print("Ist es Ihnen gesetzlich verboten, ins Ausland zu reisen (Ja oder Nein)?");
+        String antwort3 = scanner.nextLine();
+        
+        if (antwort3.equals ("Nein")) {            
+            this.ausReiseVerbot = true;            
+        }
+        else{
+            this.ausReiseVerbot = false;
+        }
+        
         System.out.print("Haben Sie noch anderes Gepäck als Handgepäck? (Ja oder Nein)?");
         String antwort4 = scanner.nextLine();
         
@@ -87,6 +97,19 @@ public class Fluggast implements Regeln {
         }
             
 
+    }
+
+    @Override
+    public boolean ausReiseVerbotKontroll() {
+        
+        if(this.ausReiseVerbot==true){
+            System.out.println("Sie können nicht reisen, da Ihnen die Ausreise aus dem Land gesetzlich untersagt ist.");
+            return false;
+        }
+        else {
+            System.out.println("Sie können reisen, da Ihnen keine Ausreise aus dem Land gesetzlich untersagt ist.");
+            return true;
+        }
     }
 
     @Override

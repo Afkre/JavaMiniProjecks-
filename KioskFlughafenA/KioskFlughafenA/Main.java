@@ -1,6 +1,5 @@
 
-package KioskFlughafen;
-
+package KioskFlughafenA;
 
 public class Main {
     public static void main(String []args) throws InterruptedException{
@@ -12,11 +11,14 @@ public class Main {
                       +"Um das Kiosk-System nutzen zu können, müssen die Reisenden alle folgenden Voraussetzungen erfüllen...\n"
                       +"Der Fluggast muss über ein gültiges Visum für das Zielland verfügen...\n"
                       +"Der Fluggast muss im Besitz eines gültigen Reisepasses sein.  Achten Sie bitte auf das Ablaufdatum...\n"
-                      +"Der Fluggast darf kein anderes Gepäck als Handgepäck mitführen...\n"
+                      +"Gegen den Fluggast darf kein gerichtliches Ausreiseverbot verhängt worden sein. Dies wird bei der Polizeikontrolle erneut überprüft...\n"
+                      +("Der Fluggast darf kein anderes Gepäck als Handgepäck mitführen...\n")
                       +"Das Handgepäck des Fluggastes darf 8 Kilogramm nicht überschreiten...\n";
 
         
         String message = "Sie müssen alle Anforderungen für das Ausland erfüllen";
+
+
 
         while(true) {
             System.out.println("*******************************************");
@@ -44,6 +46,15 @@ public class Main {
                 continue;
             }
 
+
+            System.out.println("Es wird geprüft, ob eine Ausreiseverbote bestehen..");
+
+            Thread.sleep(3000);
+            if (fluggast.ausReiseVerbotKontroll()==false){
+
+                System.out.println(message);
+                continue;
+            }
 
             System.out.println("Es wird geprüft, ob außer dem Handgepäck noch anderes Gepäck vorhanden ist.");
 

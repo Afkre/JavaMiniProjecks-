@@ -6,7 +6,7 @@ public class Main {
 
         String bedingungen = "Ausreiseregeln für das Ausland...\n"
                              +"Sie dürfen kein politisches Verbot haben...\n"
-                             +"Sie müssen die Studiengebühr von 15 Euro vollständig bezahlen...\n"
+                             +"Sie müssen die Gebühr von 15 Euro vollständig bezahlen...\n"
                              +"Sie müssen ein Visum für das Land haben, in das Sie reisen...";
         
         String message = "Sie müssen alle Anforderungen für das Ausland erfüllen";

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Windkraftanlage",
+            "request": "launch",
+            "mainClass": "Windkraftanlage.Windkraftanlage",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "KioskFlughafenA.Main",

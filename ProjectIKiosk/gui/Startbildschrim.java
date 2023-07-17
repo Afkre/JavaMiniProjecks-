@@ -1,6 +1,10 @@
 package ProjectIKiosk.guI;
 
 
+
+
+import database.DbConnection;
+import guI.settings.ActionSetting;
 import guI.settings.ButtonSetting;
 import guI.settings.InterfaceEditor;
 import guI.settings.TextSetting;
@@ -15,6 +19,8 @@ public final class Startbildschrim extends javax.swing.JFrame implements Interfa
     public Startbildschrim() {
         initComponents();
         getEdits();
+        new DbConnection();
+        
     }
 
     
@@ -34,7 +40,7 @@ public final class Startbildschrim extends javax.swing.JFrame implements Interfa
         register_label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("I-Kiosk Bordkart System Startbildschrim");
+        setTitle("I-Kiosk Bordkart System Startseite");
 
         einloggin_panel.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -80,7 +86,7 @@ public final class Startbildschrim extends javax.swing.JFrame implements Interfa
 
         register_button.setBackground(new java.awt.Color(204, 204, 255));
         register_button.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        register_button.setText("Registir");
+        register_button.setText("Register");
         register_button.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         register_button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         register_button.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -210,7 +216,7 @@ public final class Startbildschrim extends javax.swing.JFrame implements Interfa
     }                                         
 
     private void login_buttonMouseExited(java.awt.event.MouseEvent evt) {                                         
-        ButtonSetting.setOriginalBgFgColor(login_button);
+        ButtonSetting.setOriginalBgFg(login_button);
     }                                        
 
     private void register_buttonMouseEntered(java.awt.event.MouseEvent evt) {                                             
@@ -218,8 +224,10 @@ public final class Startbildschrim extends javax.swing.JFrame implements Interfa
     }                                            
 
     private void register_buttonMouseExited(java.awt.event.MouseEvent evt) {                                            
-        ButtonSetting.setOriginalBgFgColor(register_button);
+        ButtonSetting.setOriginalBgFg(register_button);
     }                                           
+    
+
     //Fokussierungsoperationen für den Textbereich
     private void user_id_fieldFocusGained(java.awt.event.FocusEvent evt) {                                          
         TextSetting.chechTheTextFocusGained(user_id_field, USER_ID_ORIGINAL);
@@ -237,14 +245,14 @@ public final class Startbildschrim extends javax.swing.JFrame implements Interfa
         TextSetting.checkTheTextFocusLost(password_field);
     }                                        
     
+    
     //Button actions
     private void login_buttonActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        
+        ActionSetting.setVisible(this, new UserKontoSeite());
     }                                            
 
     private void register_buttonActionPerformed(java.awt.event.ActionEvent evt) {                                                
-        this.setVisible(false);
-        new Register().setVisible(true);
+        ActionSetting.setVisible(this, new Register());
     }                                               
 
     

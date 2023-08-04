@@ -12,8 +12,7 @@ public class Main {
         // Finden Sie heraus, ob der Satz ein Palindrom ist...
         
         //  ein esel lese nie 
-        //  lagerregal
-        //  rentner
+        
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Geben Sie den Satz ein: ");

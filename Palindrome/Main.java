@@ -18,7 +18,7 @@ public class Main {
         System.out.print("Geben Sie den Satz ein: ");
         String satz = scanner.nextLine();
         
-        Stack<Character> stack = new Stack<Character>();
+        Stack <Character> stack = new Stack <Character>();
         
         for (int i = 0 ; i < satz.length() / 2 ;i++) {
             stack.push(satz.charAt(i));

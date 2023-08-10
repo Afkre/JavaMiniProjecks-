@@ -7,7 +7,6 @@ import javax.swing.SwingUtilities;
 
 public class FlughafenUI extends JFrame {
     
-}
 
 public static void main(String[] args) {
     SwingUtilities.invokeLater(() -> {
@@ -59,4 +58,5 @@ public static void main(String[] args) {
         frame.pack();
         frame.setVisible(true);
     });
+}
 }

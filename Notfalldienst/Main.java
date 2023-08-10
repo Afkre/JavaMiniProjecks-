@@ -16,13 +16,7 @@ public class Main {
         Verbrennung -------> Mittlere Priorität
         Kopfschmerzen ---> Geringste Priorität
         
-        
         new Patient("Herr Murat", "Verbrennung")
-        
-        
-        
-        
-        
         */
 
         Queue<Patient> notdienst = new PriorityQueue<Patient>();

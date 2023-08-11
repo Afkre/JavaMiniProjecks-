@@ -4,7 +4,6 @@ public class Patient implements Comparable<Patient>{
 
     private String name;
     private String beschwerde;
-
     private int prioritaet;
 
     public Patient(String name, String beschwerde){

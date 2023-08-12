@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Hauptbildschrim",
             "request": "launch",
+            "mainClass": "Graphics.Hauptbildschrim",
+            "projectName": "JavaMiniProjects_9c1ba786"
+        },
+        {
+            "type": "java",
+            "name": "Hauptbildschrim",
+            "request": "launch",
             "mainClass": "Graphik.Hauptbildschrim",
             "projectName": "JavaMiniProjects_9c1ba786"
         },

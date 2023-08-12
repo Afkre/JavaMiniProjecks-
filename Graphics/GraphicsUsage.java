@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 
-public class Graphic extends JPanel {
+public class GraphicsUsage extends JPanel {
 
     @Override
     public void paint(Graphics g) {
@@ -31,7 +31,7 @@ public class Graphic extends JPanel {
         
     }
 
-    public Graphic() {
+    public GraphicsUsage() {
         
         setBackground(Color.black);
         
